@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.toggle-btn > i {
+  height: 5%;
+  width: 5%;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+header > div {
+  margin: 0;
+  padding: 0;
+  height: 5%;
+  width: 5%;
+}
+
+@keyframes deplacement {
+  from {
+    transform: translate(-1000px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}
+@keyframes deplacement2 {
+  from {
+    transform: translateX((0px));
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fond3 {
+    background-color: black;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    background-image: url(./pics/fondNav.jpg);
+    top: 48px;
+    width: 50%;
+    height: 40vh;
+    margin-bottom: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: deplacement2 1s cubic-bezier(1, 0.09, 0.51, 0.9) forwards;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+  }
+  nav ul li {
+    margin-left: 10%;
+  }
+  .toggle-btn .croix {
+    display: none;
+  }
+  .active nav {
+    animation: deplacement 1s forwards;
+  }
+
+  .active .burger {
+    display: none;
+  }
+  .active .croix {
+    display: block;
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 2em;
+}
+
+.rectangle {
+  width: 550px;
+  background-color: #f3f3f3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 445px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+.rectangle:hover {
+  color: #f2f2f2;
+  box-shadow: 20px 50px 100px rgb(0, 0, 0, 0.5);
+}
+
+.containerBoutton > a > button:hover {
+  color: #f2f2f2;
+  box-shadow: 20px 50px 100px rgb(0, 0, 0, 0.5);
+}
+
+.containerBoutton > a {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20%;
+}
+.boutton {
+  transition: all 0.5s;
+  background: #f2f2f2;
+  opacity: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  width: 60%;
+  height: 100px;
+}
+.boutton > p {
+  font-size: x-large;
+}
+.containerBoutton > a {
+  text-decoration: none;
+}
+
+/* couleur de fond des rectangles */
+.fond1:hover,
+.b1:hover {
+  opacity: 1;
+  background: #e2e9e5;
+  background: linear-gradient(45deg, #161616 15%, #2647c9 100%);
+}
+.fond2:hover,
+.b2:hover {
+  opacity: 1;
+  background: #e2e9e5;
+  background: linear-gradient(45deg, #161616 15%, rgb(234 85 80) 100%);
+}
+.fond3:hover,
+.b3:hover {
+  opacity: 1;
+  background: #e2e9e5;
+  background: linear-gradient(45deg, #161616 15%, rgb(57, 122, 170) 100%);
+}
+.fond4:hover,
+.b4:hover {
+  opacity: 1;
+  background: #e2e9e5;
+  background: linear-gradient(45deg, #161616 15%, #e59e2b 100%);
+}
+.fond5:hover,
+.b5:hover {
+  opacity: 1;
+  background: #e2e9e5;
+  background: linear-gradient(45deg, #161616 15%, rgb(142, 186, 58) 100%);
+}
+.fond6:hover,
+.b6:hover {
+  opacity: 1;
+  background: #e2e9e5;
+  background: linear-gradient(45deg, #161616 15%, rgb(194, 12, 12) 100%);
+}
+.fond7:hover,
+.b7:hover {
+  opacity: 1;
+  background: #e2e9e5;
+  background: linear-gradient(45deg, #161616 15%, #acacac 100%);
+}
+.fond8:hover,
+.b8:hover {
+  opacity: 1;
+  background: #e2e9e5;
+  background: linear-gradient(45deg, #161616 15%, #2b94e5 100%);
+}
+.fond9:hover,
+.b9:hover {
+  opacity: 1;
+  background: #e2e9e5;
+  background: linear-gradient(45deg, #161616 15%, #a42be5 100%);
+}
+/*  */
+
+.icone > a {
+  margin: 0%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* taille des icones des launcher*/
+.bon > img {
+  width: 60%;
+  height: 60%;
+}
+.mauv > img {
+  width: 30%;
+  height: 30%;
+  margin-top: 5%;
+}
+.petit > img {
+  width: 45%;
+  height: 45%;
+  margin-top: 7%;
+}
+
+.grand > img {
+  width: 40%;
+  height: 40%;
+}
+/*  */
+
+.marginTopImg > img {
+  margin-top: 7%;
+}
+
+.containerFooter {
+  z-index: 2;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/* change la taille des logos des reseaux */
+.Reseaux > a {
+  margin-right: 2%;
+}
+.Reseaux > a > img {
+  width: 2.5%;
+  height: 2.5%;
+}
+/*  */
+/* change la taille de deux reseaux car */
+#facebook > img {
+  width: 2.3%;
+  height: 2.3%;
+}
+
+#github > img {
+  width: 4.5%;
+  height: 4.5%;
+}
+/*  */
+
+span {
+  color: white;
+  margin: 0%;
+}
+.containerFooter > p {
+  margin-top: 0.5%;
+}
+.containerFooter > a {
+  margin-right: 2%;
+}

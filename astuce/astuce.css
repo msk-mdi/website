@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  background-color: rgb(61, 61, 61);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  vertical-align: middle;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 2em;
+}
+
+.rectangle {
+  width: 850px;
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  height: 1000px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+}
+
+.rectangle:hover {
+  color: #f2f2f2;
+  box-shadow: 20px 50px 100px rgb(0, 0, 0, 0.5);
+}
+.icone {
+  margin: 0%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4%;
+  margin-left: 15%;
+}
+.description {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: x-large;
+  display: flex;
+  justify-content: space-around;
+}
+.icone > a > img {
+  width: 78%;
+  height: 78%;
+}
+
+.fitgirl:hover,
+.b1:hover {
+  opacity: 1;
+  background: #e2e9e5;
+  background: linear-gradient(45deg, #e2e9e5 15%, #26c929 100%);
+}
+.dodi:hover,
+.b2:hover {
+  opacity: 1;
+  background: #e2e9e5;
+  background: linear-gradient(45deg, #e2e9e5 15%, rgb(234 84 78) 100%);
+}
+.footer1 {
+  z-index: 2;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  bottom: 0;
+  width: 100%;
+}
+.Reseaux > a {
+  margin-right: 2%;
+}
+.Reseaux > a > img {
+  width: 2.5%;
+  height: 2.5%;
+}
+
+/* change la taille de deux reseaux car */
+#facebook > img {
+  width: 2.3%;
+  height: 2.3%;
+}
+
+#github > img {
+  width: 4.5%;
+  height: 4.5%;
+}
+/*  */
+
+span {
+  color: white;
+  margin: 0%;
+}
+.footer1 > p {
+  margin-top: 0.5%;
+}
+.footer1 > a {
+  margin-right: 10%;
+}
